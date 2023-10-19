@@ -64,7 +64,7 @@ function App() {
             </div>
             <div className="grid-item grid-item-5">
               <h2>Fourth Article Title</h2>
-              <h4>Fourth Article Subtitle</h4>
+              <h4>Fourth Article Sule</h4>
             </div>
             <div className="grid-item grid-item-6">
               <h2>Fifth Article Title</h2>
