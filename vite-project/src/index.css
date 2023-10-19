@@ -1,0 +1,94 @@
+:root{
+  --black: black;
+  --white: white;
+  --bg: rgb(226, 255, 218);
+  --darkbg: rgb(187, 221, 178);
+}
+
+body {
+  background-color: var(--bg);
+  font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+/* nav bar */
+nav {
+  display: flex;
+  justify-content: center;
+  background-color: var(--bg);
+}
+
+nav > a {
+  flex: 1;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  text-decoration: none;
+  font-size: 25px;
+  color: var(--black);
+  transition: background-color 0.25s ease;
+  margin-bottom: 0px;
+}
+
+nav > a:hover {
+  background-color: var(--darkbg);
+}
+
+/* website title and subtitle */
+#header {
+  background: var(--darkbg);
+  font-family: Comic 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.blog-header {
+  background-color: var(--darkbg);
+  text-align: center;
+  align-items: center;
+}
+
+.blog-header > h1 {
+  font-size: 10vw;
+  margin: 0px;
+  padding-top: 0.5vw;
+}
+
+.blog-header > h3 {
+  font-size: 3vw;
+  margin-top: 1vw;
+  padding-bottom: 2vw;
+}
+
+/* trending and other articles in grid */
+/*trending */
+.trending-article-image {
+  width: 50vw;
+  height: 30vw;
+  height: fill;
+}
+
+/* OtherStories */
+.grid-container {
+  display: grid;
+  
+  grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+  grid-template-columns: 2fr 1fr;
+  grid-gap: 10px; /* Adjust the gap between items as needed */
+  padding: 20px; /* Add padding as needed */
+}
+
+.grid-item {
+  text-align: center;
+}
+
+.grid-item-1 {
+  grid-area: 1 / 1 / 7 / 2;
+}
+
+.grid
+
+/* trending now */
+#trending-now {
+  margin-left: 20px;
+}
+
