@@ -34,7 +34,7 @@ function App() {
           </nav>
         </header>
           <div className="blog-header">
-            <h1>BlogSpace</h1>
+            <h1>WineSpace</h1>
             <h3>Hated, Jaded, Outdated</h3>
           </div>
         <body>
