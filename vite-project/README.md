@@ -9,11 +9,15 @@ Currently, two official plugins are available:
 
 To Dos
 - make featured article clickable - Tim
-- Logo on position: fixed on scroll that becomes the menu
 - write content for other pages - Tim
 - make sidebar articles clickable - Tim
+- styling: color scheme/fonts - Tim
 
-- - formate pages - Raphael
-- make sidebar modular - Raphael
+- Logo on position: fixed on scroll that becomes the menu - Raphael
+- formate pages - Raphael
 - make the articles modular - Raphael
+
 - write the articles -Both
+
+Done:
+- make sidebar modular - Raphael
