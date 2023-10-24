@@ -15,15 +15,12 @@ function trendingArticle({ title, subtitle, author, imageLink }) {
     )
   }
 
-let scrollMenu = "closed";
-const menuButton = document.getElementsByClassName('scroll-menu-button');
-function toggleScrollMenu() {
-    if (scrollMenu === "closed") {
-        scrollMenu = "open";
-    } else if (scrollMenu === "open") {
-        scrollMenu = "closed;"
-    }
-}
+  const [scrollMenu, setScrollMenu] = useState("closed");
+
+  function toggleScrollMenu() {
+    setScrollMenu(scrollMenu === "closed" ? "open" : "closed");
+  }
+  
 
 const recentArticles = [
     {
@@ -60,8 +57,8 @@ function Home() {
       
         <>
         <header id="header">
-        <nav class="scroll-menu">
-          <button className="scroll-menu-button" onClick={toggleScrollMenu()}>
+        <nav className="scroll-menu">
+        <button className="scroll-menu-button" onClick={toggleScrollMenu}>
             <p>Winer</p>
           </button>
         </nav>

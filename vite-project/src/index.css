@@ -1,3 +1,40 @@
+/* Add these styles to your CSS file */
+
+.recent-article {
+  position: relative;
+}
+
+.recent-article-image {
+  width: 100%;
+  height: auto;
+}
+
+.modal {
+  display: none;
+  position: absolute;
+  background-color: rgba(0, 0, 0, 0.7);
+  color: white;
+  padding: 10px;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  transition: opacity 0.3s;
+}
+
+.modal-open {
+  display: block;
+}
+
+.modal-text {
+  text-align: center;
+  font-size: large;
+}
+
+.recent-article:hover .modal {
+  display: block;
+}
+
+
 :root{
   --black: black;
   --white: rgb(255, 255, 255);
