@@ -48,6 +48,8 @@ nav > a:hover {
   font-family: 'Cedarville Cursive', cursive;
 }
 
+
+
 .blog-header {
   background-color: var(--darkbg);
   text-align: center;
@@ -67,14 +69,13 @@ nav > a:hover {
   padding-bottom: 2vw;
 }
 
-/* trending and recent articles in grid */
 .grid-container {
   display: grid;
   max-width: 100vw;
   grid-template-rows: 1fr 1fr 1fr;
   grid-template-columns: 2fr 1fr;
-  grid-gap: 10px; /* Adjust the gap between items as needed */
-  padding: 20px; /* Add padding as needed */
+  grid-gap: 10px;
+  padding: 20px;
 }
 
 .grid-header {
