@@ -1,7 +1,7 @@
 import React from 'react'
 
 function RecentArticle({ title, subtitle, author, date, imageLink }) {
-    return (
+  return (
       <div className='recent-article'>
         <img src={imageLink} className="recent-article-image"></img>
         <h1 className="recent-article-date">{date}</h1>

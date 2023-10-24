@@ -6,7 +6,7 @@ import './index.css'
 
 function trendingArticle({ title, subtitle, author, imageLink }) {
     return (
-      <div>
+      <div className="trending-article-div grid-item">
         <img src={imageLink} className="trending-article-image"></img>
         <h2 className="trending-article-title cedarville-cursive">{title}</h2>
         <h3 className="trending-article-subtitle cedarville-cursive">{subtitle}</h3>
@@ -23,9 +23,6 @@ function toggleScrollMenu() {
     } else if (scrollMenu === "open") {
         scrollMenu = "closed;"
     }
-    
-
-
 }
 
 const recentArticles = [
@@ -59,27 +56,19 @@ function Home() {
         contact: "Contact",
         }
 
-        
-        
     return(
       
         <>
-        <head><link
-  href="https://fonts.googleapis.com/css2?family=Cedarville+Cursive&display=swap"
-  rel="stylesheet"
-/>
-</head>
         <header id="header">
+        <nav class="scroll-menu">
+          <button className="scroll-menu-button" onClick={toggleScrollMenu()}>
+            <p>Winer</p>
+          </button>
+        </nav>
         <nav>
           <a href="/">{pageName.home}</a>
           <a href="/about">{pageName.about}</a>
           <a href="/contact">{pageName.contact}</a>
-        </nav>
-
-        <nav class="scroll-menu">
-          <button class="scroll-menu-bottom" onClick={toggleScrollMenu()}>
-            <p>Winer</p>
-          </button>
         </nav>
       </header>
       <div className="blog-header">
@@ -88,7 +77,7 @@ function Home() {
       </div>
       <body>
         <div id="home-body" className="grid-container">
-          <div id="trending-now" className="grid-item grid-item-1">
+          <div id="trending-now">
             {/* Trending now, single large article */}
             <h2 className="grid-heading cedarville-cursive">Trending Now</h2>
             {trendingArticle({
@@ -101,7 +90,7 @@ function Home() {
           </div>
             
           <div>
-              <h2 className="grid-heading cedarville-cursive">Recent Articles</h2>
+            <h2 className="grid-heading cedarville-cursive">Recent Articles</h2>
                 {recentArticles.map((props, index) => (
                     <div key={index} className={`grid-item grid-item-${index}`}>
                     {RecentArticle(props)}
