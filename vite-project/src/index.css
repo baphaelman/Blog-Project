@@ -1,29 +1,17 @@
-cedarville-cursive {
-  font-family: 'Cedarville Cursive', cursive;
-}
-
-.trending-article-title.cedarville-cursive {
-  font-family: 'Cedarville Cursive', cursive;
-}
-
-.recent-article-title.cedarville-cursive {
-  font-family: 'Cedarville Cursive', cursive;
-}
-
 :root{
   --black: black;
-  --white: white;
-  --bg: rgb(226, 255, 218);
-  --darkbg: rgb(187, 221, 178);
+  --white: rgb(255, 255, 255);
+  --bg: rgb(121, 34, 63);
+  --darkbg: rgb(69, 12, 34);
+  --lightbg: rgb(255, 226, 236);
 }
 
 body {
   background-color: var(--bg);
-  font-family:'Cedarville Cursive', cursive;
+  font-family: 'Source Serif 4';
   overflow-x: hidden;
   margin: 0;
 }
-
 
 #home-body {
   padding-top: 0;
@@ -45,7 +33,7 @@ nav > a {
 
   text-decoration: none;
   font-size: 25px;
-  color: var(--black);
+  color: var(--lightbg);
   transition: background-color 0.25s ease;
   margin-bottom: 0px;
 }
@@ -64,6 +52,7 @@ nav > a:hover {
   background-color: var(--darkbg);
   text-align: center;
   align-items: center;
+  color: var(--white);
 }
 
 .blog-header > h1 {
@@ -83,7 +72,7 @@ nav > a:hover {
   display: grid;
   max-width: 100vw;
   grid-template-rows: 1fr 1fr 1fr;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: 2fr 1fr;
   grid-gap: 10px; /* Adjust the gap between items as needed */
   padding: 20px; /* Add padding as needed */
 }
@@ -93,8 +82,11 @@ nav > a:hover {
 }
 
 .grid-heading {
+  color: var(--lightbg);
   text-align: center;
+  font-family: cursive;
   margin-top: 1vw;
+  font-size: 3vw;
 }
 
 .grid-item {
@@ -103,36 +95,39 @@ nav > a:hover {
   box-sizing: border-box;
 }
 
-.grid-item-1 {
-  grid-area: 1 / 1 / 7 / 2;
-}
 /*trending */
 .trending-article-image {
   width: 50vw;
   height: 30vw;
   border-radius: 1vw;
 }
+
+.trending-article-div {
+  background: var(--bg);
+}
+
 /* Recent Articles */
 
 .recent-article-date {
-  font-size: 2vw;
+  font-size: 1vw;
 }
 
 .recent-article-title {
-  font-size: 4vw;
-  margin: 0
+  font-size: 2vw;
+  margin: 0;
 }
 
 .recent-article-subtitle {
   max-width: 75%;
-  font-size: 2vw;
+  font-size: 1.5vw;
   margin: 0 auto;
+  margin-top: 0.5vw;
 }
 
 .recent-article-author {
-  margin-top: 0;
+  margin-top: 0.5vw;
   margin-bottom: 2vw;
-  font-size: 1.5vw;
+  font-size: 1vw;
 }
 
 .recent-article-image {
@@ -150,12 +145,50 @@ nav > a:hover {
   text-align: center;
   padding: 1vw;
   box-sizing: border-box;
-  border: 2px solid var(--darkbg); 
+  border: 5px solid var(--darkbg); 
   margin: 30px; 
-  background-color: rgb(239, 255, 239);
-  border-radius: 0.5vw;
+  background-color: var(--lightbg);
+  border-radius: 0.75vw;
 }
 
+/* article pages */
 
+.article {
+  display: flex;
+  justify-content: center;
+}
 
+.article-box {
+  padding: 5vw;
+  padding-top: 0;
+  width: 85vw;
+  background: var(--lightbg);
+  border-radius: 1vw;
+}
 
+.article-author {
+  font-size: 2vw;
+}
+
+.article-title {
+  font-size: 4vw;
+  margin: 0;
+}
+
+.article-subtitle {
+  font-size: 2.5vw;
+}
+
+.article-date {
+  font-size: 1.5vw;
+  margin-top: 0;
+}
+
+.article-image {
+  width: 50vw;
+  border-radius: 1vw;
+}
+
+.article-writing {
+  font-size: 1.5vw;
+}
