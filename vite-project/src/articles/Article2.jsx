@@ -3,20 +3,29 @@ import ArticleTemplate from './ArticleTemplate'
 
 function Article2() {
     const articleContent = `
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Sit amet venenatis urna cursus eget nunc scelerisque viverra. Aliquet porttitor lacus luctus accumsan. Consequat ac felis donec et. Tincidunt id aliquet risus feugiat in ante metus. Ac turpis egestas sed tempus urna et pharetra pharetra massa. Tincidunt praesent semper feugiat nibh sed pulvinar proin. Felis eget nunc lobortis mattis. Neque gravida in fermentum et sollicitudin ac orci phasellus. Tristique senectus et netus et malesuada fames. Amet venenatis urna cursus eget nunc scelerisque viverra. Sit amet volutpat consequat mauris nunc congue. Vitae nunc sed velit dignissim sodales ut eu sem.</p>
-        <p>Massa massa ultricies mi quis hendrerit dolor magna. Non arcu risus quis varius quam quisque id diam vel. Fusce id velit ut tortor pretium viverra suspendisse potenti nullam. Aliquam etiam erat velit scelerisque. Auctor eu augue ut lectus. Suspendisse faucibus interdum posuere lorem ipsum dolor. Sed nisi lacus sed viverra tellus in hac. Interdum posuere lorem ipsum dolor. Massa ultricies mi quis hendrerit dolor. At volutpat diam ut venenatis tellus in. Egestas sed tempus urna et pharetra pharetra massa. Rhoncus dolor purus non enim praesent elementum facilisis leo vel. Rhoncus est pellentesque elit ullamcorper dignissim cras tincidunt lobortis feugiat. Eu lobortis elementum nibh tellus molestie nunc non blandit massa.</p>
-        <p>Libero justo laoreet sit amet cursus sit. Et leo duis ut diam quam nulla porttitor massa id. Ac felis donec et odio pellentesque diam volutpat commodo sed. Nulla facilisi cras fermentum odio. Faucibus pulvinar elementum integer enim neque volutpat ac tincidunt vitae. Egestas pretium aenean pharetra magna ac. Aliquam vestibulum morbi blandit cursus risus at. Duis ultricies lacus sed turpis. Velit scelerisque in dictum non consectetur a erat nam. Ut consequat semper viverra nam libero justo laoreet.</p>
-        <p>Enim facilisis gravida neque convallis a cras. Ultrices in iaculis nunc sed augue. Nulla facilisi etiam dignissim diam. Pretium aenean pharetra magna ac placerat vestibulum lectus mauris. Posuere morbi leo urna molestie at elementum eu. Viverra orci sagittis eu volutpat odio facilisis mauris. Ut eu sem integer vitae justo eget magna fermentum. Amet risus nullam eget felis eget. Diam vulputate ut pharetra sit. Integer vitae justo eget magna fermentum iaculis eu non. In hac habitasse platea dictumst vestibulum rhoncus. Dignissim diam quis enim lobortis scelerisque fermentum dui. Gravida dictum fusce ut placerat orci nulla pellentesque dignissim enim. Rhoncus mattis rhoncus urna neque viverra justo nec ultrices dui. Gravida neque convallis a cras semper auctor. Odio ut enim blandit volutpat maecenas volutpat blandit aliquam etiam. Porttitor lacus luctus accumsan tortor posuere ac ut consequat semper. Pulvinar proin gravida hendrerit lectus a. Diam maecenas ultricies mi eget mauris pharetra et.</p>
-        <p>Vitae tortor condimentum lacinia quis vel eros donec ac odio. Fermentum et sollicitudin ac orci phasellus egestas. Nisl purus in mollis nunc sed id semper risus. Nam libero justo laoreet sit. Ullamcorper eget nulla facilisi etiam dignissim diam quis. Pellentesque diam volutpat commodo sed egestas egestas fringilla phasellus faucibus. Adipiscing tristique risus nec feugiat in. Mi quis hendrerit dolor magna eget est lorem ipsum. Sollicitudin ac orci phasellus egestas tellus rutrum tellus pellentesque eu. Ultrices in iaculis nunc sed augue lacus viverra vitae. Vulputate sapien nec sagittis aliquam. Consectetur adipiscing elit pellentesque habitant morbi tristique. Lacinia at quis risus sed vulputate odio ut enim blandit. Et netus et malesuada fames ac turpis egestas integer. Consectetur lorem donec massa sapien faucibus et molestie ac feugiat. Diam sit amet nisl suscipit adipiscing bibendum est. Leo integer malesuada nunc vel risus commodo. Eget velit aliquet sagittis id consectetur purus ut faucibus pulvinar.</p>
-    `
+        <p>There's something undeniably magical about the perfect pairing of wine with a carefully crafted dish. Whether you're planning a special dinner, celebrating an occasion, or simply indulging in a gourmet meal, mastering the art of wine pairing can take your culinary experience to the next level. In this guide, we'll explore the fundamentals of wine pairing, helping you make well-informed choices that will delight your taste buds.</p>
+        <h3>The Basics of Wine Pairing</h3>
+        <p>Before diving into the specifics, let's start with the basics. Wine pairing is all about creating harmony between the flavors and textures of your food and your chosen wine. By considering the following factors, you can make exceptional pairings:</p>
+        <p>Intensity: Match the intensity of the wine with the intensity of the dish. Light wines complement lighter foods, while robust wines stand up to heavier, more flavorful dishes.</p>
+        <p>Acidity: High-acid wines can cut through fatty or creamy dishes, providing balance. Conversely, low-acid wines work well with lighter fare.</p>
+        <p>Sweetness: Sweet dishes are best accompanied by wines of equal or greater sweetness to avoid making the wine taste dry. Dessert wines are an obvious choice here.</p>
+        <p>Flavor Matching: Look for complementary flavors. For instance, a citrusy Sauvignon Blanc pairs wonderfully with a zesty seafood dish.</p>
+        <h3>Classic Pairings</h3>
+        <p>Now, let's delve into some classic wine and food pairings that are sure to impress your guests:</p>
+        <p>Chardonnay and Buttered Lobster: The rich, buttery notes of Chardonnay beautifully complement the succulent, buttered lobster meat.</p>
+        <p>Cabernet Sauvignon and Steak: The tannins in Cabernet Sauvignon stand up to the bold flavors of a perfectly grilled steak, enhancing the overall experience.</p>
+        <p>Sauvignon Blanc and Goat Cheese Salad: The bright acidity and herbal notes of Sauvignon Blanc provide an ideal contrast to the tangy creaminess of goat cheese in a salad.</p>
+        <p>Pinot Noir and Duck: The earthy, red fruit notes of Pinot Noir complement the rich, gamey flavors of duck.</p>
+        <p>Riesling and Spicy Thai Cuisine: The slight sweetness and acidity of Riesling balance the heat and complexity of Thai dishes, creating a harmonious pairing.</p>
+        `
 
     return (
         <ArticleTemplate 
-            title="The Best Wines of 2023"
-            subtitle="Read about our editors' favorite wines from this year"
-            author="Heel Asseale"
+            title="A Guide to Wine Pairing"
+            subtitle="Elevate your dining experience with our simple recommendations"
+            author="Aim Poonsornsiri"
             date="October 23rd, 2023"
-            imageLink="https://www.seriouseats.com/thmb/xnQObuVXoS4rVwmuQ0DlycZckB4=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/sea-primary-glassware-rkilgore-980-bddd4702ec1046cb80204d37a4003cc1.jpeg"
+            imageLink="https://academy.getbackbar.com/hs-fs/hubfs/Blog%20Assets/Infographics/Page-002.jpg?width=541&name=Page-002.jpg"
             content={articleContent}
         />
     )
