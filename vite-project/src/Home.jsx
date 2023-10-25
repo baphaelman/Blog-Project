@@ -40,6 +40,13 @@ const recentArticles = [
       author: "Raphael Bajet",
       date: "September 30th, 2023",
       imageLink: "https://imgs.search.brave.com/jVfF_zdnCJMaXVIixaxgDNkI97WXdTOBL6n8CDScdXk/rs:fit:860:0:0/g:ce/aHR0cHM6Ly9tZWRp/YS5pc3RvY2twaG90/by5jb20vaWQvMTU3/NjE5OTIyL3Bob3Rv/L3Jvc2Utd2luZS1h/bGZyZXNjby5qcGc_/cz02MTJ4NjEyJnc9/MCZrPTIwJmM9VXQw/N3J2RUxKTDVmX1Na/NXIxXzBiVS1mUm5r/WUpyOEFSNTlmQ1hw/OFNMYz0"
+    },
+    {
+      title: "5 wineries you should visit in Napa Valley.",
+      subtitle: "You will not regret.",
+      author: "Seokmin Song",
+      date: "October 25th, 2023",
+      imageLink: "http://www.diningaround.com/assets/robet_mondavi_winery_header__joel_riddell_.jpg"
     }
 ]
 
