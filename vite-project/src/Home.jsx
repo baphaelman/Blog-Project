@@ -1,20 +1,23 @@
 import React from 'react'
 import {useState} from 'react'
+import {Link} from 'react-router-dom'
 
 import RecentArticle from './components/RecentArticle'
 import './index.css'
 
-
-function trendingArticle({ title, subtitle, author, imageLink }) {
-    return (
+function trendingArticle({ title, subtitle, author, imageLink, articleLink }) { 
+  return (
+    <Link to={articleLink} className="trending-article-link"> 
       <div className="trending-article-div grid-item">
-        <img src={imageLink} className="trending-article-image"></img>
-        <h2 className="trending-article-title cedarville-cursive">{title}</h2>
-        <h3 className="trending-article-subtitle cedarville-cursive">{subtitle}</h3>
-        <p className="trending-article-author cedarville-cursive">by {author}</p>
+          <img src={imageLink} className="trending-article-image" alt={title}></img>
+          <h2 className="trending-article-title cedarville-cursive">{title}</h2>
+          <h3 className="trending-article-subtitle cedarville-cursive">{subtitle}</h3>
+          <p className="trending-article-author cedarville-cursive">by {author}</p>
       </div>
-    )
-  }
+    </Link>
+  )
+}
+
 
 const recentArticles = [
     {
@@ -75,7 +78,8 @@ function Home() {
               title: "2023's Best Wines",
               subtitle: "Our ranking of this year's finest reds, whites, and rosés",
               author: "Raphael Bajet",
-              imageLink: "https://www.seriouseats.com/thmb/xnQObuVXoS4rVwmuQ0DlycZckB4=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/sea-primary-glassware-rkilgore-980-bddd4702ec1046cb80204d37a4003cc1.jpeg"
+              imageLink: "https://www.seriouseats.com/thmb/xnQObuVXoS4rVwmuQ0DlycZckB4=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/sea-primary-glassware-rkilgore-980-bddd4702ec1046cb80204d37a4003cc1.jpeg",
+              articleLink: "/article1"
             })}
             
           </div>
