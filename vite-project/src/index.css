@@ -4,13 +4,19 @@
   --bg: rgb(121, 34, 63);
   --darkbg: rgb(69, 12, 34);
   --lightbg: rgb(255, 226, 236);
+  --hoverlightbg: rgb(255, 175, 203);
   --lesslightbg: rgb(255, 63, 130);
   --lightpink: rgb(255, 126, 171);
 }
 
 @font-face {
   font-family: 'Source Serif 4';
-  src: url('../public/SourceSerif4.ttf') format('ttf');
+  src: url('https://fonts.googleapis.com/css2?family=Source+Serif+4&display=swap') format('json');
+}
+
+a {
+  text-decoration: none;
+  color: black;
 }
 
 body {
@@ -137,6 +143,11 @@ nav > a:hover {
   text-align: center;
   padding: 1vw;
   box-sizing: border-box;
+  transition: background-color 0.25s ease;
+}
+
+.grid-item:hover {
+  background-color: var(--hoverlightbg);
 }
 
 /*trending */
@@ -144,10 +155,6 @@ nav > a:hover {
   width: 50vw;
   height: 30vw;
   border-radius: 1vw;
-}
-
-.trending-article-div {
-  background: var(--bg);
 }
 
 /* Recent Articles */

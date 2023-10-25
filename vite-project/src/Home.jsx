@@ -3,13 +3,17 @@ import {useState} from 'react'
 import {Link} from 'react-router-dom'
 
 import RecentArticle from './components/RecentArticle'
+import articles from './articles/articlesList'
 import './index.css'
 
-function trendingArticle({ title, subtitle, author, imageLink, articleLink }) { 
+const lastArticle = articles.pop();
+
+function trendingArticle({ title, subtitle, author, imageLink, date, articleLink }) { 
   return (
     <Link to={articleLink} className="trending-article-link"> 
       <div className="trending-article-div grid-item">
           <img src={imageLink} className="trending-article-image" alt={title}></img>
+          <h3>{date}</h3>
           <h2 className="trending-article-title cedarville-cursive">{title}</h2>
           <h3 className="trending-article-subtitle cedarville-cursive">{subtitle}</h3>
           <p className="trending-article-author cedarville-cursive">by {author}</p>
@@ -17,31 +21,6 @@ function trendingArticle({ title, subtitle, author, imageLink, articleLink }) {
     </Link>
   )
 }
-
-
-const recentArticles = [
-    {
-        title: "2023's Best Wines",
-        subtitle: "Our ranking of this year's finest reds, whites, and rosés",
-        author: "Raphael Bajet",
-        date: "October 17th, 2023",
-        imageLink: "https://www.seriouseats.com/thmb/xnQObuVXoS4rVwmuQ0DlycZckB4=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/sea-primary-glassware-rkilgore-980-bddd4702ec1046cb80204d37a4003cc1.jpeg"
-    },
-    {
-        title: "Why Wine Isn't Dying",
-        subtitle: "Despite the calls from fearmongerers, wine isn't going anywhere",
-        author: "Raphael Bajet",
-        date: "September 3rd, 2023",
-        imageLink: "https://imgs.search.brave.com/ER8mgFwE50ZAaD4M-Ya74DhQEcsqv2MZFUdI7CtUhwQ/rs:fit:500:0:0/g:ce/aHR0cHM6Ly9tZWRp/YS5nZXR0eWltYWdl/cy5jb20vaWQvMTU3/NDc4MDIxL3Bob3Rv/L3ZpbmV5YXJkcy5q/cGc_cz02MTJ4NjEy/Jnc9MCZrPTIwJmM9/TmNNSlhITTcta2tN/bHFDZUJRUUZRZGpP/enV3OUpHbGh3M21P/RUozUEJnOD0"
-    },
-    {
-      title: "Rosés are Overrated.",
-      subtitle: "Deal with it.",
-      author: "Raphael Bajet",
-      date: "September 30th, 2023",
-      imageLink: "https://imgs.search.brave.com/jVfF_zdnCJMaXVIixaxgDNkI97WXdTOBL6n8CDScdXk/rs:fit:860:0:0/g:ce/aHR0cHM6Ly9tZWRp/YS5pc3RvY2twaG90/by5jb20vaWQvMTU3/NjE5OTIyL3Bob3Rv/L3Jvc2Utd2luZS1h/bGZyZXNjby5qcGc_/cz02MTJ4NjEyJnc9/MCZrPTIwJmM9VXQw/N3J2RUxKTDVmX1Na/NXIxXzBiVS1mUm5r/WUpyOEFSNTlmQ1hw/OFNMYz0"
-    }
-]
 
 function Home() {
       const pageName = {
@@ -74,21 +53,15 @@ function Home() {
           <div id="trending-now">
             {/* Trending now, single large article */}
             <h2 className="grid-heading cedarville-cursive">Trending Now</h2>
-            {trendingArticle({
-              title: "2023's Best Wines",
-              subtitle: "Our ranking of this year's finest reds, whites, and rosés",
-              author: "Raphael Bajet",
-              imageLink: "https://www.seriouseats.com/thmb/xnQObuVXoS4rVwmuQ0DlycZckB4=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/sea-primary-glassware-rkilgore-980-bddd4702ec1046cb80204d37a4003cc1.jpeg",
-              articleLink: "/article1"
-            })}
+            {trendingArticle(lastArticle)}
             
           </div>
             
           <div>
             <h2 className="grid-heading cedarville-cursive">Recent Articles</h2>
-                {recentArticles.map((props, index) => (
+                {articles.map((props, index) => (
                     <div key={index} className={`grid-item grid-item-${index}`}>
-                      <Link to={`/article${index + 1}`}>
+                      <Link to={articles[index].articleLink}>
                         {RecentArticle(props)}
                       </Link>
                     </div>
