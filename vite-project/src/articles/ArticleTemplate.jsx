@@ -10,20 +10,20 @@ function ArticleTemplate({ title, subtitle, author, date, imageLink, content }) 
     return (
         <>
             <header id="header">
-            {/* <nav class="scroll-menu">
-                <button class="scroll-menu-button" onClick={toggleScrollMenu()}>
+                <nav className="scroll-menu">
+                    <button className="scroll-menu-button">
                     <p>Winer</p>
-                </button>
-            </nav>
-            */}
-            <nav>
-                <a href="/">{pageName.home}</a>
-                <a href="/about">{pageName.about}</a>
-                <a href="/contact">{pageName.contact}</a>
-            </nav>
+                    </button>
+                </nav>
             </header>
+            <body>
+                <nav>
+                    <a href="/">{pageName.home}</a>
+                    <a href="/about">{pageName.about}</a>
+                    <a href="/contact">{pageName.contact}</a>
+                </nav>
                 <div className="blog-header">
-                <h1>Winer</h1>
+                    <h1>Winer</h1>
                     <h2>Enjoying the Finest Flavor with Every Sip</h2>
                 </div>
                 
@@ -37,6 +37,7 @@ function ArticleTemplate({ title, subtitle, author, date, imageLink, content }) 
                         <div className="article-writing" dangerouslySetInnerHTML={{ __html: content }} ></div>
                     </div>
                 </div>
+            </body>
         </>
     )
 }

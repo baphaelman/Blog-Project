@@ -8,6 +8,7 @@ import Contact from  './Contact'
 
 import Article1 from './articles/Article1'
 import Article2 from './articles/Article2'
+import Article3 from './articles/Article3'
 
 function App() {
   return (
@@ -19,6 +20,7 @@ function App() {
                 <Route path="/contact" element={<Contact />} />
                 <Route path="/article1" element={<Article1 />} />
                 <Route path="/article2" element={<Article2 />} />
+                <Route path="/article3" element={<Article3 />} />
             </Routes>
         </BrowserRouter>
     </>

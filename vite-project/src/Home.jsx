@@ -1,4 +1,5 @@
 import React from 'react'
+import {useState} from 'react'
 
 import RecentArticle from './components/RecentArticle'
 import './index.css'
@@ -14,13 +15,6 @@ function trendingArticle({ title, subtitle, author, imageLink }) {
       </div>
     )
   }
-
-  const [scrollMenu, setScrollMenu] = useState("closed");
-
-  function toggleScrollMenu() {
-    setScrollMenu(scrollMenu === "closed" ? "open" : "closed");
-  }
-  
 
 const recentArticles = [
     {
@@ -57,22 +51,22 @@ function Home() {
       
         <>
         <header id="header">
-        <nav className="scroll-menu">
-        <button className="scroll-menu-button" onClick={toggleScrollMenu}>
-            <p>Winer</p>
-          </button>
-        </nav>
-        <nav>
-          <a href="/">{pageName.home}</a>
-          <a href="/about">{pageName.about}</a>
-          <a href="/contact">{pageName.contact}</a>
-        </nav>
-      </header>
-      <div className="blog-header">
-      <h1 style={{ fontFamily: 'Cedarville Cursive' }}>Winer</h1>
-        <h2 style={{ fontFamily: 'Cedarville Cursive' }}>Enjoying the Finest Flavor with Every Sip</h2>
-      </div>
+          <nav className="scroll-menu">
+            <button className="scroll-menu-button">
+              <p>Winer</p>
+            </button>
+          </nav>
+        </header>
       <body>
+        <nav>
+            <a href="/">{pageName.home}</a>
+            <a href="/about">{pageName.about}</a>
+            <a href="/contact">{pageName.contact}</a>
+          </nav>
+        <div className="blog-header">
+          <h1 style={{ fontFamily: 'Cedarville Cursive' }}>Winer</h1>
+          <h2 style={{ fontFamily: 'Cedarville Cursive' }}>Enjoying the Finest Flavor with Every Sip</h2>
+        </div>
         <div id="home-body" className="grid-container">
           <div id="trending-now">
             {/* Trending now, single large article */}

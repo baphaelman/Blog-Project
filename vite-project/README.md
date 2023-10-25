@@ -14,10 +14,10 @@ To Dos
 - styling: color scheme/fonts - Tim
 
 - Logo on position: fixed on scroll that becomes the menu - Raphael
-- formate pages - Raphael
-- make the articles modular - Raphael
+- formate about and contact pages - Raphael
 
 - write the articles -Both
 
 Done:
 - make sidebar modular - Raphael
+- make the articles modular - Raphael
