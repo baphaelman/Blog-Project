@@ -4,7 +4,7 @@ import ArticleTemplate from './ArticleTemplate'
 import articles from './articlesList'
 
 function Article2() {
-const article2 = articles[1];
+    const article2 = articles[1];
     return (
         <ArticleTemplate 
             title={article2.title}
